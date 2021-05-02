@@ -16,6 +16,7 @@ const FaqSection = () => {
             labore?
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Daily Schadual</h4>
