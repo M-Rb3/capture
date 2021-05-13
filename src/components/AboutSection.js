@@ -8,21 +8,6 @@ import { titleAnim, fade, photoAnim } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {
-  // const titleAnimation = {
-  //   hidden: { opacity: 0 },
-  //   show: { opacity: 1, transition: { duration: 2 } },
-  // };
-  // const container = {
-  //   hidden: { x: 100 },
-  //   show: {
-  //     x: 0,
-  //     transition: {
-  //       duration: 0.75,
-  //       ease: "easeOut",
-  //       staggerChildren: 1,
-  //     },
-  //   },
-  // };
   return (
     <About>
       <Description>
