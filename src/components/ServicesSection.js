@@ -8,9 +8,13 @@ import home2 from "../img/home2.png";
 // Styles
 import { About, Description, Image } from "../style";
 import styled from "styled-components";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
+
 const ServicesSection = () => {
+  const [element, control] = useScroll();
   return (
-    <Services>
+    <Services variants={scrollReveal} animate={control} ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
@@ -61,6 +65,7 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  width: 95%;
 `;
 const Cards = styled.div`
   display: flex;
