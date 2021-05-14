@@ -78,3 +78,12 @@ export const scrollReveal = {
     transition: { duration: 0.5 },
   },
 };
+
+export const swaap = {
+  hidden: { x: "-130%", skew: "45deg" },
+  show: {
+    x: "100%",
+    skew: "0deg",
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
