@@ -6,11 +6,12 @@ const GlobalStyle = createGlobalStyle`
         padding:0;
         box-sizing:border-box;
     }
-
+    
+    
     body{
         background:#1b1b1b;
         font-family: 'Inter', sans-serif;
-        /* overflow-x:hidden; */
+        overflow-x:hidden;
     }
 
     button{
@@ -26,6 +27,8 @@ const GlobalStyle = createGlobalStyle`
         &:hover{
             background-color:#23d997;
             color:white;
+        }
+        @media (max-width: 760px) {
         }
     }
      h2{
@@ -53,7 +56,9 @@ const GlobalStyle = createGlobalStyle`
         font-size:1.4rem;
         line-height:150%;
     }
-
+    .collapse {
+    /* height: 10rem; */
+  }
 `;
 
 export default GlobalStyle;

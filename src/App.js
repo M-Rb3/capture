@@ -7,6 +7,8 @@ import OurWork from "./pages/OurWork";
 import ContactUS from "./pages/ContactUs";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
+import Footer from "./components/Footer";
+
 // Router
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
@@ -33,6 +35,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }
