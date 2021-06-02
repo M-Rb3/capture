@@ -28,13 +28,21 @@ const GlobalStyle = createGlobalStyle`
             background-color:#23d997;
             color:white;
         }
-        @media (max-width: 760px) {
-        }
+       
     }
      h2{
-            font-weight:lighter;
-            font-size:4rem;
-            width: max-content;
+        font-weight:lighter;
+        font-size:4rem;
+        width: max-content;
+        @media (max-width: 500px) {
+            width: 100%; 
+            font-size: 3rem;
+            display: flex;
+            span{
+            margin: 0 .85rem;
+            }
+            justify-content: space-between;
+        }
         }
     h3{
         color:white;

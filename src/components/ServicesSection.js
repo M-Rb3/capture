@@ -15,7 +15,7 @@ const ServicesSection = () => {
   const [element, control] = useScroll();
   return (
     <Services variants={scrollReveal} animate={control} ref={element}>
-      <Image>
+      <Image className="main-image">
         <img src={home2} alt="home2" />
       </Image>
       <ServiceDescription>
@@ -65,16 +65,41 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
-  width: 95%;
+  /* width: 95%; */
   padding-right: 5rem;
+  @media (max-width: 1200px) {
+    padding: 0rem;
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+    h2 {
+      margin: auto;
+    }
+  }
+  img {
+    @media (max-width: 760px) {
+      justify-content: center;
+      padding: 0rem;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .main-image {
+      justify-content: center;
+      padding-left: 0rem;
+      padding: 3rem 5.7rem;
+      max-width: 100%;
+    }
+  }
 `;
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-left: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (max-width: 760px) {
-    justify-content: center;
+    padding-left: 0rem;
   }
 `;
 const Card = styled.div`
@@ -87,6 +112,11 @@ const Card = styled.div`
       padding: 1rem;
       background: white;
       color: black;
+    }
+  }
+  @media (max-width: 760px) {
+    P {
+      margin: auto;
     }
   }
 `;
