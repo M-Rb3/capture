@@ -5,7 +5,7 @@ import {
   faFacebookF,
   faLinkedin,
   faInstagram,
-  faTwitter,
+  faGit,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -17,16 +17,13 @@ const Footer = () => {
             <h4>company</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                <a href="#about-us">about us</a>
               </li>
               <li>
-                <a href="#">our services</a>
+                <a href="#our-services">our services</a>
               </li>
               <li>
-                <a href="#">privacy policy</a>
-              </li>
-              <li>
-                <a href="#">affiliate program</a>
+                <a href="#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -70,16 +67,16 @@ const Footer = () => {
           <div className="footer-col">
             <h4>follow us</h4>
             <div className="social-links">
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=100003151277183">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
+              <a href="https://github.com/M-Rb3">
+                <FontAwesomeIcon icon={faGit} />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/m_rabie1/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/mohamed-rabie-b68b071b9/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
@@ -93,6 +90,7 @@ const Footer = () => {
 const FooterStyled = styled.footer`
   background-color: #282828;
   padding: 70px 0;
+
   .footer-col {
     width: 25%;
     padding: 0 15px;

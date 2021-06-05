@@ -8,7 +8,7 @@ import { scrollReveal } from "../animation";
 const FaqSection = () => {
   const [element, control] = useScroll();
   return (
-    <Faq ref={element} variants={scrollReveal} animate={control}>
+    <Faq id="faq" ref={element} variants={scrollReveal} animate={control}>
       <h2>
         Any Question <span>FAQ</span>
       </h2>
@@ -57,12 +57,14 @@ const FaqSection = () => {
 const Faq = styled(About)`
   display: block;
   width: 95%;
+  text-align: center;
   span {
     display: block;
   }
   h2 {
     padding-bottom: 2rem;
     font-weight: lighter;
+    text-align: left;
   }
   .faq-line {
     background: #cccccc;
@@ -73,11 +75,20 @@ const Faq = styled(About)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    text-align: left;
   }
   .answer {
     padding: 2rem 0rem;
     p {
       padding: 1rem 0rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    h2 {
+      display: -webkit-inline-box;
     }
   }
 `;

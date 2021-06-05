@@ -14,7 +14,12 @@ import { useScroll } from "./useScroll";
 const ServicesSection = () => {
   const [element, control] = useScroll();
   return (
-    <Services variants={scrollReveal} animate={control} ref={element}>
+    <Services
+      id="our-services"
+      variants={scrollReveal}
+      animate={control}
+      ref={element}
+    >
       <Image className="main-image">
         <img src={home2} alt="home2" />
       </Image>

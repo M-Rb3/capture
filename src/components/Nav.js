@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 const Nav = () => {
   const { pathname } = useLocation();
   const [navStatue, setNavStatue] = useState(false);
@@ -11,7 +13,8 @@ const Nav = () => {
       <div className="brand-name">
         <h1>
           <Link id="logo" to="/">
-            Capture
+            <FontAwesomeIcon icon={faCode} />
+            &nbsp;RB3
           </Link>
         </h1>
       </div>

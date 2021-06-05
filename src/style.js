@@ -11,10 +11,11 @@ export const About = styled(motion.div)`
   @media (max-width: 1200px) {
     flex-direction: column;
     padding: 3rem 10rem;
-    text-align: center;
+    /* text-align: center; */
     img {
       margin-top: 3rem;
       padding: 0;
+      max-width: 100% !important;
     }
   }
   @media (max-width: 600px) {
@@ -31,14 +32,17 @@ export const About = styled(motion.div)`
       }
       /* justify-content: space-between; */
     }
-  }
+    @media (max-width: 500px) {
+      text-align: left;
+    }
 
-  @media (max-width: 760px) {
-    img {
-      justify-content: center;
-      padding-left: 0rem;
-      padding: 3rem 4rem;
-      max-width: 100% !important;
+    @media (max-width: 760px) {
+      img {
+        justify-content: center;
+        padding-left: 0rem;
+        padding: 3rem 4rem;
+        max-width: 100% !important;
+      }
     }
   }
 `;
@@ -55,6 +59,11 @@ export const Description = styled.div`
     button {
       padding: 1rem 2rem;
       margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .description-title {
+      display: inline;
     }
   }
 `;
@@ -78,7 +87,7 @@ export const Image = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
-    max-width: 70%;
+    max-width: 25vw;
   }
 `;
 
