@@ -6,7 +6,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 // Styles
-import { About, Description, Image, ServiceDescription } from "../style";
+import { About, Image, ServiceDescription } from "../style";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
 import { useScroll } from "./useScroll";

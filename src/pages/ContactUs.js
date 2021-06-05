@@ -1,7 +1,7 @@
 import React from "react";
 // Animatons
 import { motion } from "framer-motion";
-import { pageAnimation, titleAnim } from "../animation";
+import { pageAnimation } from "../animation";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
 
-const ContactUS = () => {
+const ContactUs = () => {
   return (
     <ContactStyled
       variants={pageAnimation}
@@ -243,4 +243,4 @@ function sendEmail(e) {
     );
   e.target.reset();
 }
-export default ContactUS;
+export default ContactUs;

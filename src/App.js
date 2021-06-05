@@ -4,7 +4,7 @@ import GlobalStyle from "./components/GlobalStyle";
 // Import Pages
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
-import ContactUS from "./pages/ContactUS";
+import ContactUs from "./pages/ContactUs";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 import Footer from "./components/Footer";
@@ -31,7 +31,7 @@ function App() {
             <MovieDetail />
           </Route>
           <Route path="/contact">
-            <ContactUS />
+            <ContactUs />
           </Route>
         </Switch>
       </AnimatePresence>

@@ -11,12 +11,6 @@ const ScrollTop = () => {
     });
   }, [pathname]);
 
-  //   window.onbeforeunload = (e) => {
-  //     window.scroll({
-  //       top: 0,
-  //       left: 0,
-  //     });
-  //   };
   return null;
 };
 
