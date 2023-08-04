@@ -60,7 +60,7 @@ npm run build
 
 
 ## Live Demo
-Check out the live demo of the Capture landing page at https://your-capture-demo-url.com.
+Check out the live demo of the Capture landing page at https://capture-landing-p.netlify.app/.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit/) file for details.
