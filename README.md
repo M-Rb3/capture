@@ -63,7 +63,7 @@ npm run build
 Check out the live demo of the Capture landing page at https://your-capture-demo-url.com.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/c/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit/) file for details.
 
 
    
